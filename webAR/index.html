@@ -32,19 +32,19 @@
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
 <div class="arjs-loader">
-    <div>正在加载AR模型，请稍候...</div>
+    <div>Loading, please wait...</div>
   </div>
   <!-- a-frame scene -->
   <a-scene vr-mode-ui="enabled: false;" gesture-detector renderer="logarithmicDepthBuffer: true;" embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
     <!-- 图片训练后文件路径，不带文件拓展名！ -->
-    <!-- <a-nft type="nft" url="https://gmgm4321.github.io/webAR/nft/smoking_boy/smoking_boy" smooth="true" smoothCount="10" smoothTolerance=".01" -->
-      <!-- smoothThreshold="5"> -->
+    <a-nft type="nft" url="https://gmgm4321.github.io/webAR/nft/smoking_boy/smoking_boy" smooth="true" smoothCount="10" smoothTolerance=".01"
+      smoothThreshold="5">
       
-      <!-- <a-entity gltf-model="https://gmgm4321.github.io/webAR/model/smoking_boy/scene.gltf" scale="50 50 50" -->
-        <!-- gesture-handler="minScale: 0.25; maxScale: 10" position="100 0 -200" rotation="-90 0 0"> -->
-      <!-- </a-entity> -->
-    <!-- </a-nft> -->
+      <a-entity gltf-model="https://gmgm4321.github.io/webAR/model/smoking_boy/scene.gltf" scale="50 50 50"
+        gesture-handler="minScale: 0.25; maxScale: 10" position="100 0 -200" rotation="-90 0 0">
+      </a-entity>
+    </a-nft>
 	
 	<a-nft type="nft" url="https://gmgm4321.github.io/webAR/nft/cat/LINE_ALBUM_00ee_220411" smooth="true" smoothCount="10" smoothTolerance=".01"
       smoothThreshold="5">
