@@ -9,10 +9,9 @@
         <a-marker type='pattern' url='https://gmgm4321.github.io/webAR/patt/pattern-marker.patt'>
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
-			gesture-handler="minScale: 0.25; maxScale: 10"
-            position="0 0 0"
-            scale="0.05 0.05 0.05"
-            gltf-model="https://gmgm4321.github.io/webAR/model/cute_fox/scene.gltf"
+			gltf-model="https://gmgm4321.github.io/webAR/model/cute_fox/scene.gltf" 
+			scale="50 50 50"
+			gesture-handler="minScale: 0.25; maxScale: 10" position="100 0 -200" rotation="-90 0 0"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
