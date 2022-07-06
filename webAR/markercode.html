@@ -6,12 +6,12 @@
 	<script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
     <body style="margin : 0px; overflow: hidden;">
         <a-scene embedded arjs>
-        <a-marker type='pattern' url='https://gmgm4321.github.io/webAR/patt/pattern-qrcord.patt'>
+        <a-marker type='pattern' url='https://gmgm4321.github.io/webAR/patt/pattern-marker.patt'>
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
 			gltf-model="https://gmgm4321.github.io/webAR/model/cute_fox/scene.gltf" 
-			scale="50 50 50"
-			gesture-handler="minScale: 0.25; maxScale: 10" position="100 0 -200" rotation="-90 0 0"
+			position="0 0 0"
+            scale="5 5 5"
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
