@@ -1,6 +1,6 @@
 {
-  "addPath": "ARnft-ES6-react",
-  "cameraPara": "/Data/camera_para.dat",
+  "addPath": "",
+  "cameraPara": "examples/Data/camera_para.dat",
   "container": {
     "create": true,
     "containerName": "",
@@ -20,10 +20,16 @@
   "loading": {
     "create": true,
     "logo": {
-      "src": "arNFT-logo.gif",
+      "src": "Data/arNFT-logo.gif",
       "alt": "arNFT.js logo"
     },
     "loadingMessage": "Loading, please wait..."
+  },
+  "renderer": {
+    "type": "three",
+    "alpha": true,
+    "antialias": true,
+    "precision": "mediump"
   },
   "stats": {
     "createHtml": true
