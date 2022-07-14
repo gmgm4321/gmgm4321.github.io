@@ -22,7 +22,7 @@
     <script>
         let width = 640;
         let height = 480;
-        ARnft.ARnft.init(width, height, [["ARnft/examples/DataNFT/pinball"]], [['pinball']], 'config.json', true)
+        ARnft.ARnft.init(width, height, [["examples/DataNFT/pinball"]], [['pinball']], 'config.json', true)
             .then((nft) => {
                 document.addEventListener('containerEvent', function (ev) {
 
@@ -62,7 +62,7 @@
 
                     let nftAddTJS = new ARnftThreejs.NFTaddTJS(nft.uuid);
                     nftAddTJS.oef = true;
-                    nftAddTJS.addModel('https://gmgm4321.github.io/ARnft/examples/Data/models/Duck/glTF/Duck.glb', 'pinball', 80, false);
+                    nftAddTJS.addModel('./Data/models/Duck/glTF/Duck.glb', 'pinball', 80, false);
                     const tick = () => {
                         sceneThreejs.draw();
                         window.requestAnimationFrame(tick)
