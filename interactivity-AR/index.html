@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Some various experiments with Ar.js and Three.js | by kalwalt</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="section">
+				<h1 class="title has-text-centered">Kalwalt interactivity apps</h1>
+				<h3 class="subtitle has-text-centered">Some various experiments with Ar.js and Three.js</h3>
+			</header>
+				<div class="tile is-ancestor">
+					<div class="tile is-parent is-vertical">
+						<article class="tile is-child notification is-danger section">
+							<h4 class="title has-text-centered">Glitch experiments</h4>
+							<ul class="section">
+								<li><a href="glitch/test.html">Test</a></li>
+								<li><a href="glitch/canvas-glitch.html">Canvas glitch</a></li>
+								<li><a href="glitch/canvas-glitch-animation.html">Canvas glitch animation</a></li>
+								<li><a href="glitch/canvas-random-glitch.html">Canvas random glitch</a></li>
+								<li><a href="glitch/glitch.html">Glitch</a></li>
+								<li><a href="glitch/glitch-static-jpeg.html">Glitch with static-jpeg</a></li>
+								<li><a href="glitch/glitch-threejs-static-jpeg.html">Glitch with threejs and static-jpeg</a></li>
+								<li><a href="glitch/glitch-threejs-with-data-texture.html">Glitch with threejs and DataTexture</a></li>
+								<li><a href="glitch/glitch-threejs-with-shader.html">Glitch with threejs and a Shader</a></li>
+								<li><a href="glitch/glitch-threejs.html">Glitch with three.js (basic)</a></li>
+								<li><a href="glitch/glitch-simple-threejs.html">Glitch with three.js</a></li>
+								<li><a href="glitch/glitch-arjs-threejs.html">Glitch with ar.js and three.js</a></li>
+								<li><a href="glitch/glitch-inside-shader.html">Glitch inside a Shader with three.js</a></li>
+							</ul>
+						</article>
+						<article class="tile is-child notification is-success section">
+							<h4 class="title has-text-centered">Ar.js experiments</h4>
+							<ul class="section">
+								<li><a href="arjs/basic-threejs-example.html">A basic example</a></li>
+								<li><a href="arjs/basic-threejs-example-raw-githack.html">A basic example with raw.githack</a></li>
+								<li><a href="arjs/basic-threejs-example-ES6-raw-githack.html">A basic example with ES6 and raw.githack</a></li>
+								<li><a href="arjs/aframe-testing-artoolkit5-js-imp.html">A testing example</a></li>
+								<li><a href="arjs/markerroot.html">The markerRoot example from the old AR.js repo</a></li>
+								<li><a href="arjs/default-thinner-border.html">The default-thinner-border example from the old AR.js repo</a></li>
+								<li><a href="arjs/parameters-tunning.html">The parameters-tunning example from the old AR.js repo</a></li>
+								<li><a href="arjs/multi.html">Multi example</a></li>
+								<li><a href="arjs/multi-simple-aframe.html">Multi simple example with aframe and Ar.js</a></li>
+                <br>
+								<p>NFT Examples</p>
+								<li><a href="arjs/basic-nft-aframe.html">A basic example with NFT aframe</a></li>
+							</ul>
+						</article>
+					</div>
+					<div class="tile is-parent is-vertical ">
+						<article class="tile is-child notification is-info section">
+							<h4 class="title has-text-centered">A-frame experiments</h4>
+								<ul class="section">
+									<li><a href="aframe/aframe-ar-basic.html">The simplest example with aframe</a></li>
+									<li><a href="aframe/aframe-raw-githack.html">The simplest example with aframe with raw.githack</a></li>
+									<li><a href="aframe/aframe-test.html">A simple test with aframe</a></li>
+									<li><a href="aframe/aframe-ar-plane-texture.html">A simple plane with a texture</a></li>
+									<li><a href="aframe/aframe-ar-shader.html">A simple example with a shader</a></li>
+									<li><a href="aframe/aframe-ar-gltf.html">A simple example with AR.js and a gltf model</a></li>
+									<li><a href="aframe/aframe-ar-simple-gltf.html">A simpler example with AR.js and the Duck gltf model</a></li>
+									<li><a href="aframe/aframe-ar-landscape-model.html">An example with an obj model</a></li>
+								</ul>
+						</article>
+						<article class="tile is-child notification is-warning section">
+							<h4 class="title has-text-centered">Three.js</h4>
+							<ul class="section">
+								<li><a href="threejs/threejs-with-shader.html">Simple app with threejs and a Shader</a></li>
+							</ul>
+						</article>
+						<article class="tile is-child notification is-danger section">
+							<h4 class="title has-text-centered">Jsartoolkit5 NFT experiments</h4>
+							<p> Nft examples with multithreading use the SharedArrayBuffer,
+								you should enable this option in the browser. <b>Be aware that this can be dangerous, use it at own risk!</b>
+								See <a href="https://meltdownattack.com/">Spectre</a>
+								<ul class="section">
+									<li><a href="nft/nft_threads.html">Nft example with multithreading</a></li>
+									<li><a href="nft/nft_threads_duck.html">Nft example with multithreading and gltf model (Duck)</a></li>
+									<li><a href="nft/nft_threads_cesium.html">Nft example with multithreading and gltf model (Cesium Man)</a></li>
+								</ul>
+								<p> Nft examples with the standard version of the library, without SharedArrayBuffer ( not threaded ).
+									Some of the examples don't use WebWorker the last two use the WebWoker (recommended).
+									Note taht nftloader is deprecated use <a href="https://github.com/webarkit/ARnft">ARnft</a> instead!
+								</p>
+								<ul class="section">
+										<li><a href="nft/nft.html">Nft simple example</a></li>
+										<li><a href="nft/nft_duck.html">Nft example and gltf model (Duck)</a></li>
+										<li><a href="nft/nft_cesium.html">Nft example and gltf model (CesiumMan)</a></li>
+										<br>
+										<p>Other examples and tests...</p>
+										<li><a href="nft/nft_pinball_mixed.html">Nft example with pinball.jpg and hiro marker</a></li>
+										<br>
+										<p>Testing multi Nft code</p>
+										<li><a href="nft/nft_simple_multi_markers.html">Nft example loading multi markers (multi WebWorkers)</a></li>
+								</ul>
+						</article>
+						<article class="tile is-child notification is-info section">
+							<h4 class="title has-text-centered">Tracking2d experiments</h4>
+							<p>Experiments with jsfeat and tracking 2d
+							</p>
+							<ul class="section">
+								<li><a href="tracking2d/tracking2d_jsfeat.html">Tracking 2d with jsfeat</a></li>
+							</ul>
+						</article>
+						<article class="tile is-child notification is-danger section">
+							<h4 class="title has-text-centered">ARnft examples</h4>
+							<p>Some example with ARnft and jsartoolkitNFT
+							</p>
+							<ul class="section">
+								<li><a href="ARnft/arNFT_example.html">ARnft simple example</a></li>
+								<li><a href="ARnft/arNFT_intereactive_example.html">ARnft interactive example</a></li>
+								<li><a href="ARnft/arNFT_video_example.html">ARnft video example</a></li>
+								<li><a href="ARnft/arNFT_simd128_example.html">ARnft simd128 example</a></li>
+								<li><a href="jsartoolkitNFT/ARToolkitNFT_ES6_example.html">JsartoolkitNFT simple example</a></li>
+							</ul>
+						</article>
+						<article class="tile is-child notification is-info section">
+							<h4 class="title has-text-centered">Opencv.js examples</h4>
+							<p>Some examples with Opencv.js</p>
+							<ul class="section">
+								<li><a href="opencvjs/convert_image_example.html">Convert image example</a></li>
+								<li><a href="opencvjs/init_orb_example.html">Draw descriptors with ORB</a></li>
+								<li><a href="opencvjs/optical_flow_example.html">Optical flow example</a></li>
+								<li><a href="opencvjs/simple_example.html">Simple example with Opencv.js</a></li>						
+							</ul>	
+						</article>
+					</div>
+				</div>
+				<section class="section">
+					<h4 class="title">glslEditor</h4>
+				<div class="box has-background-success" style="width: 50%">
+					<span class="icon is-medium">
+					  <span class="fa-stack">
+					    <i class="fas fa-circle fa-stack-2x"></i>
+					    <i class="fas fa-edit fa-stack-1x fa-inverse"></i>
+					  </span>
+					</span>
+					<a class="has-text-light" href="glslEditor/">glslEditor</a>
+				</div>
+			</section>
+				<footer class="section">
+					<p class="has-text-centered">Made with <a href="https://bulma.io">Bulma</a></p>
+					<p class="has-text-centered">
+						by <a href="https://github.com/kalwalt"><strong>Kalwalt</strong></a>
+					</p>
+				</footer>
+		</div>
+	</body>
+</html>
