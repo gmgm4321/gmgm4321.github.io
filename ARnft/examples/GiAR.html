@@ -56,23 +56,9 @@
                     directionalLight.position.set(0.5, 0, 0.866);
                     scene.add(directionalLight)
 
-						
-					var threeGLTFLoader = new THREE.GLTFLoader();
-					var model;
-
-					threeGLTFLoader.load('./Data/models/cute_fox/scene.gltf', function (gltf) {
-						model = gltf.scene.children[0];
-						model.name = 'cute_fox';
-						
-						model.rotation.y = 180;
-						model.position.z = 0;
-						model.position.x = 0;
-						model.position.y = 0;			
-					});
-					
                     let nftAddTJS = new ARnftThreejs.NFTaddTJS(nft.uuid);
                     nftAddTJS.oef = true;
-                    nftAddTJS.addModel(model, 'GiAR', 80, false);
+                    nftAddTJS.addModel('./Data/models/cute_fox/scene.gltf', 'GiAR', 80, false);
                     const tick = () => {
                         sceneThreejs.draw();
                         window.requestAnimationFrame(tick)
