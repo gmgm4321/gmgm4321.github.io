@@ -25,7 +25,7 @@
     <script>
         let width = 640;
         let height = 480;
-        ARnft.ARnft.init(width, height, [["examples/pinball/pinball"]], [['pinball']], 'config.json', true)
+        ARnft.ARnft.init(width, height, [["examples/DataNFT/1600765472762_Crop"]], [['1600765472762_Crop']], 'config.json', true)
             .then((nft) => {
                 document.addEventListener('containerEvent', function (ev) {
 
@@ -59,7 +59,7 @@
                     nftAddTJS.oef = true;
                     // Set width, height and width and height number of segments of the PlaneGeometry.
                     let imgConfig = {w: 1, h: 1, ws: 1, hs: 1};
-                    nftAddTJS.addVideo('arvideo', 'pinball', 180, imgConfig, false);
+                    nftAddTJS.addVideo('arvideo', '1600765472762_Crop', 180, imgConfig, false);
 
                     const tick = () => {
                         sceneThreejs.draw();
