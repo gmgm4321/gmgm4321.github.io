@@ -18,6 +18,8 @@
   <div class="slider">
     <div class="slides">
 
+		</button><button class="slide" onclick="switchSrc_glTF(this, 'mosasaurus')" style="background-image: url('assets/mosasaurus.png');">  
+
       </button><button class="slide" onclick="switchSrc(this, 'brave_robot')" style="background-image: url('assets/brave_robot.png');">
 
 		<button class="slide selected" onclick="switchSrc(this, 'Duck')" style="background-image: url('assets/duck.png');">
@@ -25,8 +27,7 @@
       </button><button class="slide" onclick="switchSrc(this, 'cute_fox')" style="background-image: url('assets/cute_fox.png');">
       
       </button><button class="slide" onclick="switchSrc(this, 'Flamingo')" style="background-image: url('assets/Flamingo.png');">
-      
-      </button><button class="slide" onclick="switchSrc(this, 'mosasaurus')" style="background-image: url('assets/mosasaurus.png');">    
+        
     </button></div>
   </div>
 </model-viewer>
@@ -37,6 +38,15 @@
   window.switchSrc = (element, name) => {
     const base = "models/" + name;
     modelViewer.src = base + '.glb';
+    modelViewer.poster = "assets/" + '.png';
+    const slides = document.querySelectorAll(".slide");
+    slides.forEach((element) => {element.classList.remove("selected");});
+    element.classList.add("selected");
+  };
+  
+  window.switchSrc_glTF = (element, name) => {
+    const base = "models/" + name +"/"+name;
+    modelViewer.src = base + '.glTF';
     modelViewer.poster = "assets/" + '.png';
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
