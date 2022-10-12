@@ -1,7 +1,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<model-viewer src="models/Duck.glb" poster="assets/duck.png" shadow-intensity="1" autoplay ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
+<model-viewer src="models/mosasaurus.glb" poster="assets/mosasaurus.png" shadow-intensity="1" autoplay ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
   
   <button slot="ar-button" id="ar-button">
     View in your space
@@ -17,15 +17,16 @@
 
   <div class="slider">
     <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Duck')" style="background-image: url('assets/duck.png');">
 
       </button><button class="slide" onclick="switchSrc(this, 'brave_robot')" style="background-image: url('assets/brave_robot.png');">
+
+		<button class="slide selected" onclick="switchSrc(this, 'Duck')" style="background-image: url('assets/duck.png');">
 
       </button><button class="slide" onclick="switchSrc(this, 'cute_fox')" style="background-image: url('assets/cute_fox.png');">
       
       </button><button class="slide" onclick="switchSrc(this, 'Flamingo')" style="background-image: url('assets/Flamingo.png');">
       
-      </button><button class="slide" onclick="switchSrc(this, 'smoking_boy')" style="background-image: url('assets/smoking_boy.png');">    
+      </button><button class="slide" onclick="switchSrc(this, 'mosasaurus')" style="background-image: url('assets/mosasaurus.png');">    
     </button></div>
   </div>
 </model-viewer>
