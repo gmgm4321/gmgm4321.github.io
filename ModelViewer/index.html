@@ -45,8 +45,8 @@
   };
   
   window.switchSrc_glTF = (element, name) => {
-    const base = "models/" + name +"/"+name;
-    modelViewer.src = base + '.glTF';
+    const base = "models/" + name +"/";
+    modelViewer.src = base + 'scene.glTF';
     modelViewer.poster = "assets/" + '.png';
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
