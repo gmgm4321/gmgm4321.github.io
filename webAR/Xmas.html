@@ -37,6 +37,16 @@
   <!-- a-frame scene -->
   <a-scene vr-mode-ui="enabled: false;" gesture-detector renderer="logarithmicDepthBuffer: true;" embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+	
+	
+	<a-nft type="nft" url="https://gmgm4321.github.io/webAR/nft/smoking_boy/smoking_boy" smooth="true" smoothCount="10" smoothTolerance=".01"
+      smoothThreshold="5">
+      
+      <a-entity gltf-model="https://gmgm4321.github.io/webAR/model/smoking_boy/scene.gltf" scale="50 50 50"
+        gesture-handler="minScale: 0.25; maxScale: 10" position="100 0 -200" rotation="-90 0 0">
+      </a-entity>
+    </a-nft>
+	
     <a-nft type="nft" url="https://gmgm4321.github.io/webAR/nft/xmas/xmas" smooth="true" smoothCount="10" smoothTolerance=".01"
       smoothThreshold="5">
       
