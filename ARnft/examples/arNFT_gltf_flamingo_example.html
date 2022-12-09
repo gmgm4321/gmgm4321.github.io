@@ -70,14 +70,15 @@
                             var mixer = new THREE.AnimationMixer(model);
                             mixers.push(mixer);
                             var action = mixer.clipAction(animation);
-							actionsObj = {}
-							for(i=0;i<gltf.animations.length;i++)
-							{
-							nimate_name = gltf.animations[i]['name']
-							actionsObj[animate_name]=i
-							}
-							console.log("actionsObj:",actionsObj
                             action.play();
+							
+							// 抓取動畫名稱
+        actionsObj = {}
+        for(i=0;i<gltf.animations.length;i++){
+            animate_name = gltf.animations[i]['name']
+            actionsObj[animate_name]=i
+        }
+        console.log("actionsObj:",actionsObj)
                         }
                         function updateAnimations() {
                             if (mixers.length > 0) {
