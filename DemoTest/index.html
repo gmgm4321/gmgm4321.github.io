@@ -6,6 +6,22 @@
     <title>Demo</title>
     <link rel="shortcut icon" href="TemplateData/cat5.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+	<style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	  background-color: black;
+    }
+    .webgl-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	  background-color: black;
+    }
+  </style>
   </head>
   <body>
     <div class="webgl-content" style="display: table; width: 100%; height: 100%;">
@@ -25,10 +41,12 @@
       var progressBarFull = document.querySelector("#unity-progress-bar-full");
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
 	  
-		var mywidth = innerWidth;
-		var myheight = innerHeight;
-        document.getElementById("unity-canvas").style.width = mywidth + "px";
-        document.getElementById("unity-canvas").style.height = myheight + "px";
+		var mywidth = innerWidth*0.99;
+		var myheight = innerHeight*0.99;
+        canvas.style.width = mywidth + "px";
+        canvas.style.height = myheight + "px";
+		console.log(canvas.style.width);
+		console.log(canvas.style.height);
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -74,27 +92,7 @@
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
 
-      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-        // Mobile device style: fill the whole browser client area with the game canvas:
 
-        var meta = document.createElement('meta');
-        meta.name = 'viewport';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        document.getElementsByTagName('head')[0].appendChild(meta);
-        container.className = "unity-mobile";
-        canvas.className = "unity-mobile";
-
-        // To lower canvas resolution on mobile devices to gain some
-        // performance, uncomment the following line:
-        // config.devicePixelRatio = 1;
-
-
-      } else {
-        // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-
-        canvas.style.width = "1900px";
-        canvas.style.height = "1040px";
-      }
 
       loadingBar.style.display = "block";
 
