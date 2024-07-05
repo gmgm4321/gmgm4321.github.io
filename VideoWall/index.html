@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Wall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <div class="video-title" id="videoTitle">Video 1</div>
+        <div class="video-player">
+            <div class="button-container">
+                <button class="prev-button" onclick="prevVideo()">&#9664; Previous</button>
+                <img id="prevThumbnail" src="Video/thumbnail3.jpg" alt="Previous Video Thumbnail">
+            </div>
+            <video id="videoPlayer" controls autoplay>
+                <source id="videoSource" src="Video/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="button-container">
+                <button class="next-button" onclick="nextVideo()">Next &#9654;</button>
+                <img id="nextThumbnail" src="Video/thumbnail2.jpg" alt="Next Video Thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
